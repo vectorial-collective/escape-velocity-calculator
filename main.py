@@ -7,7 +7,7 @@ def main():
         M = 5.972e+24
     else:
         M = int(input("Enter custom mass in kilograms: ").strip('kg').strip('kilograms'))
-    R = int(input("What is the distance from the center of mass in meters?: ").strip('m').strip('meters'))
+    R = int(input("What is the distance from the center of mass in meters? (6371 for Earth): ").strip('m').strip('meters'))
     escape_velocity = int(((2*G*M)/R)**0.5)
     print(escape_velocity)
 
